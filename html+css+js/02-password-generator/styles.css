@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#inp {
+    flex: 1;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+#copy {
+    padding: 10px 12px;
+    border: none;
+    background-color: #2980b9;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#copy:hover {
+    background-color: #1c5984;
+}
+
+.selector-container>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.selector-container p {
+    color: #333;
+}
+
+input[type="checkbox"],
+input[type="range"] {
+    cursor: pointer;
+}
+
+#range {
+    width: 60%;
+}
+
+#rangeCheckbox {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+#generate {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    background-color: #27ae60;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#generate:hover {
+    background-color: #1e874b;
+    transform: translateY(-2px);
+}
