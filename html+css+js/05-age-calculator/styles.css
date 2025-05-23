@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+    padding: 20px;
+}
+
+.main-container {
+    background: #ffffff;
+    padding: 25px 20px;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.main-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-container input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+.input-container input:focus {
+    border-color: #5d5fef;
+    outline: none;
+    box-shadow: 0 0 5px rgba(93, 95, 239, 0.2);
+}
+
+.result-container {
+    margin-block: 15px;
+    font-size: 1.1rem;
+    color: #4a4a4a;
+
+}
+
+#result {
+    display: none;
+    background-color: #e0ffe0;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #2e7d32;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #5d5fef;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4749dc;
+}
+
+/* Responsive for tablets and desktops */
+@media (min-width: 600px) {
+    .main-container {
+        max-width: 420px;
+        padding: 30px 25px;
+    }
+
+    .main-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .input-container input {
+        font-size: 1.1rem;
+    }
+
+    button {
+        font-size: 1.1rem;
+    }
+}

@@ -14,6 +14,12 @@ const symbols = '@#$%&';
 
 range.addEventListener('input', () => {
     rangeCheckbox.textContent = range.value;
+    const password = generatePassword();
+    if (!password) {
+        alert('Please select at least one option to generate a password.');
+        return;
+    }
+    inp.value = password;
 });
 
 // Shuffle function (Fisher–Yates algorithm)
