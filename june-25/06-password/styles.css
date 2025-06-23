@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+}
+
+body {
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    background-color: #ffffff;
+    border: 2px solid #6200ea;
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: transform 0.3s ease;
+}
+
+.main-container:hover {
+    transform: scale(1.01);
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 15px 20px;
+    font-size: 22px;
+    text-align: start;
+    border: 2px solid #ffa500;
+    border-radius: 10px;
+    background-color: #fdfdfd;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.input-container input:focus {
+    border-color: #6200ea;
+}
+
+.icon {
+    display: flex;
+    gap: 10px;
+}
+
+.icon i {
+    font-size: 24px;
+    cursor: pointer;
+    color: #6200ea;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.icon i:hover {
+    transform: scale(1.1);
+    color: #ff9800;
+}
+
+.range-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.range-container input[type="range"] {
+    width: 80%;
+    accent-color: #6200ea;
+}
+
+.range-container span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #6200ea;
+}
+
+.option-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.option-container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.option-container div input {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+
+button {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #6200ea;
+    color: #fff;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #5310c6;
+    transform: scale(1.03);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <form id="transaction-form">
+            <input type="text" id="name" placeholder="Title" required />
+            <input type="number" id="amount" placeholder="Amount" required />
+            <select id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <input type="date" id="date" required />
+            <button type="submit">Add</button>
+        </form>
+
+        <div id="transaction-list"></div>
+
+        <div class="summary">
+            <h2>Summary</h2>
+            <p>Total Income: ₹<span id="total-income">0</span></p>
+            <p>Total Expenses: ₹<span id="total-expense">0</span></p>
+            <p>Balance: ₹<span id="balance">0</span></p>
+            <button id="download-btn">Download Excel</button>
+        </div>
+
+        <!-- HTML -->
+        <div class="charts">
+            <canvas id="dailyChart"></canvas>
+            <canvas id="dailyPieChart"></canvas>
+        </div>
+
+
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

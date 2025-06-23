@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-geenrator</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="input-container">
+            <input id="inp" type="password" readonly />
+            <div class="icon">
+                <i id="copy" class="fa-regular fa-copy"></i>
+                <i id="lock" class="fa-solid fa-lock"></i>
+            </div>
+
+        </div>
+        <div class="range-container">
+            <input id="range" type="range" min="0" max="20" />
+            <span id="rangeValue">0</span>
+        </div>
+        <div class="option-container">
+            <div>
+                <span>Number</span>
+                <input id="num" type="checkbox" />
+            </div>
+            <div>
+                <span>Upper</span>
+                <input id="upper" type="checkbox" />
+            </div>
+            <div>
+                <span>Lower</span>
+                <input id="lower" type="checkbox" />
+            </div>
+            <div>
+                <span>Special</span>
+                <input id="special" type="checkbox" />
+            </div>
+        </div>
+        <div>
+            <button id="generate">Generate</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js" charset="UTF-8"></script>
+    <script src="https://kit.fontawesome.com/c1a2a1f604.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

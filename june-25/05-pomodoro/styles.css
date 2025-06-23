@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.container {
+    padding: 20px;
+}
+
+.main-container {
+    width: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #ffffff10;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    text-align: center;
+    color: wheat;
+    margin-bottom: 10px;
+}
+
+.input-container {
+    width: 100%;
+    background: #1f2937;
+    padding: 15px;
+
+}
+
+#inp,
+#work,
+#shortBreak,
+#longBreak {
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    text-align: center;
+    background: #111827;
+    color: #00ffb3;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+.count-number {
+    margin-block: 20px;
+
+}
+
+.count-number p {
+    text-align: center;
+    color: gray;
+}
+
+#count {
+    color: white;
+    font-weight: 900;
+}
+
+
+
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-block: 20px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.btn-cont {
+    min-width: 100%;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+#start {
+    background-color: #5a0394;
+    color: white;
+    min-width: 100%;
+}
+
+#start:hover {
+    background-color: #871fcc;
+}
+
+#reset {
+    background-color: #b16105;
+    color: white;
+
+}
+
+#reset:hover {
+    background-color: #b17404;
+}
+
+
+#pause {
+    background-color: #2303d4;
+    color: white;
+}
+
+#pause:hover {
+    background-color: #10025f;
+}
+
+
+#resume {
+    background-color: #02ce1d;
+    color: white;
+}
+
+#resume:hover {
+    background-color: #048a0f;
+}

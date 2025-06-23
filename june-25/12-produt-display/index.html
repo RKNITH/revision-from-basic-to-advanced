@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern E-Commerce</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>🛍️ My E-Commerce Store</h1>
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search products..." />
+            <select id="sort">
+                <option value="default">Sort By</option>
+                <option value="priceLow">Price: Low to High</option>
+                <option value="priceHigh">Price: High to Low</option>
+                <option value="ratingHigh">Rating: High to Low</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <section id="product-list" class="product-list"></section>
+        <aside class="cart">
+            <h2>🛒 Cart</h2>
+            <ul id="cart-items"></ul>
+            <p class="total">Total: ₹<span id="total-amount">0</span></p>
+        </aside>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
